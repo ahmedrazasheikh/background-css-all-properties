@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(255, 230, 197);
+            text-transform: capitalize;
+            text-indent: 4px;
+        }
+
+        .fewer {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="fewer"
+        style="text-align: center; border: 2px solid black; background-color: royalblue; text-transform: uppercase; ">
+        Made by Ahmed Raza  </h1>
+</body>
+<script>
+    var name = prompt("Enter your Name ")
+    var math = parseInt(prompt("Enter you marks obtain in ' math ' from 75 "));
+    if(!(math>75)){
+        console.log(math)
+ } 
+ else{
+alert("Greater than 75 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+    var english = parseInt(prompt("Enter you marks obtain in 'English' from 100"));
+    if(!(english>100)){
+console.log(english)
+ } 
+ else{
+alert("Greater than 100 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+
+
+
+    var pst = parseInt(prompt("Enter you marks obtain in 'pst/urdu' from 75 "))
+
+    if(!(pst>75)){
+        console.log(pst)
+ } 
+ else{
+alert("Greater than 75 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+
+
+    var physics = parseInt(prompt("Enter you marks obtain in 'physics' from 75"));
+    if(!(physics>75)){
+        console.log(physics)
+ } 
+ else{
+alert("Greater than 75 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+
+
+
+    var chemistry = parseInt(prompt("Enter you marks obtain in 'chemistry' from 75"))
+
+    if(!(chemistry>75)){
+
+        console.log(chemistry)
+
+
+ } 
+ else{
+alert("Greater than 75 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+
+
+
+    var biology = parseInt(prompt("Enter you marks obtain in 'biology/computer' from 75"))
+
+    if(!(biology>75)){
+        console.log(biology)
+ } 
+ else{
+alert("Greater than 75 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+
+
+    var sindhi = parseInt(prompt("Enter you marks obtain in 'Sindhi/Islamiat' from 75"));
+    if(!(sindhi>75)){
+     console.log(sindhi)
+ } 
+ else{
+alert("Greater than 75 is not allowed") 
+alert ("Please reload page again do not enter greater value ")
+}
+
+    var totalObtain = math + english + pst + physics + chemistry + biology + sindhi;
+    var totalMarks = 550;
+    var percentage = totalObtain / totalMarks * 100;
+    // var percentage = Math.round(percentage);
+    var a = "A-1";
+    var b = "A";
+    var c = "B";
+    var d = "C";
+    var e = "D";
+    var f = "E";
+    //  document.write(percentage);
+    if (percentage <= 100.00 && percentage >= 80.00) {
+        document.write("<h2>" + "Name : " + name + "<br/>" + "Obtain marks : " + totalObtain + "<br/>" + "Percentage : " + percentage + "%" + "<br/>" + "Grade : " + a + "<br/>" + "Remarks :" + "Outstanding " + "</h2>")
+    }
+    if (percentage >= 70.00 && percentage <= 79.99) {
+        document.write("<h2>" + "Name : " + name + "<br/>" + "Obtain marks : " + totalObtain + "<br/>" + "Percentage : " + percentage + "%" + "<br/>" + "Grade : " + b + "<br/>" + "Remarks :" + "Excellent " + "</h2>")
+    }
+    if (percentage >= 60.00 && percentage <= 69.99) {
+        document.write("<h2>" + "Name : " + name + "<br/>" + "Obtain marks : " + totalObtain + "<br/>" + "Percentage : " + percentage + "%" + "<br/>" + "Grade : " + c + "<br/>" + "Remarks :" + "Very Good " + "</h2>")
+    }
+    if (percentage >= 50.00 && percentage <= 59.99) {
+        document.write("<h2>" + "Name : " + name + "<br/>" + "Obtain marks : " + totalObtain + "<br/>" + "Percentage : " + percentage + "%" + "<br/>" + "Grade : " + d + "<br/>" + "Remarks :" + "Good " + "</h2>")
+    }
+    if (percentage >= 40.00 && percentage <= 49.99) {
+        document.write("<h2>" + "Name : " + name + "<br/>" + "Obtain marks : " + totalObtain + "<br/>" + "Percentage : " + percentage + "%" + "<br/>" + "Grade : " + e + "<br/>" + "Remarks :" + "Fair " + "</h2>")
+    }
+    if (percentage >= 33.00 && percentage <= 39.99) {
+        document.write("<h2>" + "Name : " + name + "<br/>" + "Obtain marks : " + totalObtain + "<br/>" + "Percentage : " + percentage + "%" + "<br/>" + "Grade : " + f + "<br/>" + "Remarks :" + "Satisfactory " + "</h2>" + "<hr/>")
+    }
+    document.write("<h3>" + "Math  : " + math + "<h3/>");
+    document.write("<h3>" + "English   : " + english + "<h3/>");
+    document.write("<h3>" + "Pst/Urdu   :  " + pst + "<h3/>");
+    document.write("<h3>" + "Physics    :  " + physics + "<h3/>");
+    document.write("<h3>" + "chemistry  :  " + chemistry + "<h3/>");
+    document.write("<h3>" + "Biology   :  " + biology + "<h3/>");
+    document.write("<h3>" + "Sindhi/Islamiat   :  " + sindhi + "<h3/>");
+    document.write("<hr/>");
+</script>
+
+</html>
